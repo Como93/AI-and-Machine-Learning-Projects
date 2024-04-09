@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Diamonds Price</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body class="font-mono">
+    <div class="flex items-center justify-center">
+        <div class="p-12 max-w-lg bg-white rounded-lg overflow-hidden shadow-lg">
+            <div class="font-bold text-xl mb-2">
+                Prediction Diamonds Price
+              </div>
+              <hr />
+              <br />
+
+              <form id="prediction-form" action="/result" method="POST">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="cut">
+                    Select a cut:
+                </label>
+                <select
+                    id="cut"
+                    name="cut"
+                    class="
+                    block
+                    appearance-none
+                    w-full
+                    bg-white
+                    border border-gray-400
+                    hover:border-gray-500
+                    px-4
+                    py-2
+                    pr-8
+                    rounded
+                    shadow
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    required
+                >
+                    <option></option>
+                    <option value="0">Ideal</option>
+                    <option value="1">Premium</option>
+                    <option value="2">Very Good</option>
+                    <option value="3">Good</option>
+                    <option value="4">Fair</option>
+                </select>
+
+                <br />
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="color">
+                    Select a color:
+                </label>
+                <select
+                    id="color"
+                    name="color"
+                    class="
+                    block
+                    appearance-none
+                    w-full
+                    bg-white
+                    border border-gray-400
+                    hover:border-gray-500
+                    px-4
+                    py-2
+                    pr-8
+                    rounded
+                    shadow
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    required
+                >
+                    <option></option>
+                    <option value="0">G</option>
+                    <option value="1">E</option>
+                    <option value="2">F</option>
+                    <option value="3">H</option>
+                    <option value="4">D</option>
+                    <option value="5">I</option>
+                    <option value="6">J</option>
+                </select>
+
+                <br />
+
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="clarity">
+                    Select a clarity:
+                </label>
+                <select
+                    id="clarity"
+                    name="clarity"
+                    class="
+                    block
+                    appearance-none
+                    w-full
+                    bg-white
+                    border border-gray-400
+                    hover:border-gray-500
+                    px-4
+                    py-2
+                    pr-8
+                    rounded
+                    shadow
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    required
+                >
+                    <option></option>
+                    <option value="0">SI1</option>
+                    <option value="1">VS2</option>
+                    <option value="2">SI2</option>
+                    <option value="3">VS1</option>
+                    <option value="4">VVS2</option>
+                    <option value="5">VVS1</option>
+                    <option value="6">IF</option>
+                    <option value="7">I1</option>
+                </select>
+                
+                <br />
+
+                <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="carat"
+                >
+                    Enter carat: ( Values between 0.2 and 5.01 ) 
+                </label>
+                <input
+                    type="number"
+                    name="carat"
+                    id="carat"
+                    class="
+                    shadow
+                    appearance-none
+                    border
+                    rounded
+                    w-full
+                    py-2
+                    px-3
+                    text-gray-700
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    step=".01"
+                    min="0.2"
+                    max="5.01"
+                    required
+                ></input>
+
+                <br />
+
+                <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="x"
+                >
+                    Enter x: ( Values between 0.1 and 10.74 ) 
+                </label>
+                <input
+                    type="number"
+                    name="x"
+                    id="x"
+                    class="
+                    shadow
+                    appearance-none
+                    border
+                    rounded
+                    w-full
+                    py-2
+                    px-3
+                    text-gray-700
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    step=".01"
+                    min="0.1"
+                    max="10.74"
+                    required
+                ></input>
+
+                <br />
+
+                <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="y"
+                >
+                    Enter y: ( Values between 0.1 and 58.9 ) 
+                </label>
+                <input
+                    type="number"
+                    name="y"
+                    id="y"
+                    class="
+                    shadow
+                    appearance-none
+                    border
+                    rounded
+                    w-full
+                    py-2
+                    px-3
+                    text-gray-700
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    step=".01"
+                    min="0.1"
+                    max="58.9"
+                    required
+                ></input>
+
+                <br />
+
+                <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="z"
+                >
+                    Enter z: ( Values between 0.1 and 31.8 ) 
+                </label>
+                <input
+                    type="number"
+                    name="z"
+                    id="z"
+                    class="
+                    shadow
+                    appearance-none
+                    border
+                    rounded
+                    w-full
+                    py-2
+                    px-3
+                    text-gray-700
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    step=".01"
+                    min="0.1"
+                    max="31.8"
+                    required
+                ></input>
+
+                <br />
+
+                <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="table"
+                >
+                    Enter table: ( Values between 43.0 and 95.0 ) 
+                </label>
+                <input
+                    type="number"
+                    name="table"
+                    id="table"
+                    class="
+                    shadow
+                    appearance-none
+                    border
+                    rounded
+                    w-full
+                    py-2
+                    px-3
+                    text-gray-700
+                    leading-tight
+                    focus:outline-none focus:shadow-outline
+                    "
+                    step=".01"
+                    min="43.0"
+                    max="95.0"
+                    required
+                ></input>
+
+                <br />
+
+                <input
+                    type="submit"
+                    value="Submit"
+                    class="
+                    w-full
+                    bg-blue-500
+                    text-white
+                    font-bold
+                    mt-8
+                    p-4
+                    rounded
+                    focus:outline-none focus:shadow-outline
+                    "
+                />
+
+              </form>
+
+
+              
+        </div>
+    </div>   
+  </body>
+</html>
