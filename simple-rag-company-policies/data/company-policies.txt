@@ -1,0 +1,154 @@
+================================================================================
+                    MANUALE DELLE POLITICHE AZIENDALI - v2.3
+                          IN VIGORE DAL 1 GENNAIO 2025
+================================================================================
+
+1. POLITICHE FERIE E PERMESSI
+--------------------------------------------------------------------------------
+1.1 FERIE ANNUALI
+Ogni dipendente a tempo pieno ha diritto a 26 giorni lavorativi di ferie all'anno.
+I part-time hanno diritto alla proporzione (es. 50% = 13 giorni).
+Le ferie devono essere fruite entro il 30 giugno dell'anno successivo alla maturazione.
+Non è consentito accumulare più di 10 giorni non fruiti.
+
+1.2 PERIODO DI BLACKOUT
+Le ferie non possono essere richieste nei seguenti periodi:
+- Dal 15 novembre al 20 dicembre (chiusura anno fiscale)
+- Durante la settimana della chiusura bilancio (ultima settimana di gennaio)
+Sono concesse deroghe solo per comprovati motivi familiari o medici.
+
+1.3 PERMESSI BREVI (ROL)
+Ogni dipendente ha diritto a 32 ore annue di permessi ROL (Riduzione Orario Lavoro).
+I ROL possono essere fruiti a ore o mezze giornate, con preavviso minimo di 24 ore.
+I ROL non fruiti vengono monetizzati a dicembre al 50% del valore orario.
+
+1.4 CONGEDI SPECIFICI
+- Matrimonio: 15 giorni consecutivi di permesso retribuito
+- Lutto: 3 giorni per parenti di primo grado, 1 giorno per secondo grado
+- Trasloco: 1 giorno retribuito (max una volta all'anno)
+
+================================================================================
+
+2. SMART WORKING E LAVORO AGILE
+--------------------------------------------------------------------------------
+2.1 MODALITÀ STANDARD
+Lo smart working è consentito per un massimo di 8 giorni al mese.
+La richiesta va inoltrata con almeno 48 ore di preavviso tramite portale HR.
+Sono richieste connessione internet propria e postazione ergonomicamente idonea.
+
+2.2 GIORNI FISSI OBBLIGATORI IN SEDE
+Sono obbligatori in presenza tutti i martedì e giovedì per meeting settimanali.
+La violazione comporta decurtazione del 50% del bonus presenza mensile.
+
+2.3 SMART WORKING PER GENITORI
+I genitori con figli under 14 hanno diritto a 12 giorni/mese di smart working.
+Non è richiesto preavviso per emergenze familiari (es. scuola chiusa).
+In questi casi, va inviata mail al responsabile entro le ore 9:00.
+
+2.4 SMART WORKING INTERNAZIONALE
+Non è consentito lavorare da stati extra UE per motivi fiscali e assicurativi.
+Sono ammesse deroghe fino a 15 giorni/anno previa approvazione HR e IT.
+Paesi consentiti: Francia, Germania, Spagna, UK (max 5 giorni consecutivi).
+
+================================================================================
+
+3. RIMBORSI SPESE E TRASFERTE
+--------------------------------------------------------------------------------
+3.1 TRASFERTE NAZIONALI
+- Rimborso chilometrico auto: 0,50 €/km per tratte oltre 50 km
+- Pasti: 25 €/giorno (pranzo + cena), senza scontrino 15 €
+- Pernottamento: rimborso fino a 120 €/notte con fattura
+- Treno: rimborso integrale seconda classe (business previa autorizzazione)
+
+3.2 TRASFERTE ESTERE
+- Indennità giornaliera: 60 € (Europa), 80 € (extra Europa)
+- Rimborso pasti con scontrino: 45 €/giorno (senza scontrino 30 €)
+- Hotel: rimborso fino a 180 €/notte (200 € per capitali: Londra, Parigi)
+- Voli: solo classe economy, bagaglio a mano incluso
+
+3.3 SPESE VARIE
+- Trasporti pubblici locali: rimborso integrale su presentazione biglietti
+- Taxi/Uber: solo per tratte dalle 22:00 alle 06:00 o con bagagli >15kg
+- Materiale di cancelleria: fino a 20 €/mese senza preavviso
+- Abbonamenti digitali (Zoom, Miro): rimborsabili solo se per clienti
+
+3.4 TEMPISTICHE E MODALITÀ
+Le spese vanno inserite su sistema Concur entro 15 giorni dalla data.
+Le richieste tardive (16-30 giorni) subiscono una decurtazione del 30%.
+Oltre i 30 giorni la spesa non è rimborsabile.
+
+================================================================================
+
+4. FORMAZIONE E AGGIORNAMENTO
+--------------------------------------------------------------------------------
+4.1 BUDGET FORMAZIONE ANNUO
+Ogni dipendente ha 1.500 € budget per corsi e certificazioni.
+I corsi devono essere pertinenti al ruolo (approvazione manager + HR).
+Il budget non usato a novembre può essere trasferito al 50% all'anno successivo.
+
+4.2 GIORNI DI STUDIO
+Sono concessi fino a 5 giorni/anno retribuiti per esami e certificazioni.
+Per master universitari (max 1 giorno a settimana) previo accordo part-time.
+La frequenza ai corsi interni è obbligatoria (min 20 ore/anno).
+
+4.3 RIMBORSO CORSI ESTERNI
+- Certificazioni tecniche (AWS, Azure, Java): rimborso 100% al superamento
+- Corsi di lingua: rimborso 70% (minimo frequenza 80%)
+- MBA/Executive: contributo del 30% con rimborso in 3 anni
+
+================================================================================
+
+5. BENEFIT E WELFARE AZIENDALE
+--------------------------------------------------------------------------------
+5.1 BUONI PASTO
+Per giorni in sede (minimo 4 ore): 8 € buono pasto giornaliero.
+In smart working: nessun buono pasto (salvo riunione in sede comunicata).
+
+5.2 ASSICURAZIONE SANITARIA
+Copertura sanitaria integrativa (UniSalute) per dipendente e nucleo familiare.
+Visite specialistiche: rimborso 80% fino a 500 €/anno.
+Visite oculistiche: franchigia di 30 €, poi rimborso 100% fino a 200 €.
+
+5.3 BENEFIT PER ANZIANITÀ
+- 2 anni: 1 giorno extra di ferie
+- 5 anni: 500 € welfare netti + 2 giorni extra
+- 10 anni: settimana corta (venerdì mezza giornata) per 6 mesi
+- 15 anni: auto aziendale (segmento C) con carburante pagato
+
+5.4 PARCHEGGIO E MOBILITÀ
+Parcheggio aziendale: 30 €/mese per i primi 50 richiedenti.
+Abbonamento mezzi pubblici: rimborso 70% (fino a 600 €/anno).
+Bike to work: 0,25 €/km per tratte casa-lavoro (max 150 €/mese).
+
+================================================================================
+
+6. CASI PARTICOLARI E DEROGHE
+--------------------------------------------------------------------------------
+6.1 EMERGENZE FAMILIARI
+In caso di emergenza (infortunio, malattia grave familiare):
+- Fino a 5 giorni di permesso straordinario non detraibile da ferie
+- Richiesta via telefono + mail entro 48 ore
+- Documentazione da presentare entro 7 giorni
+
+6.2 MALATTIA DURANTE TRASFERTA
+Se ti ammali durante trasferta all'estero:
+- Contatta subito l'assistenza sanitaria (numero verde 800XXXXXX)
+- Le spese mediche sono coperte al 100% dall'assicurazione viaggio
+- I giorni di malattia non contano come trasferta (indennità sospesa)
+
+6.3 LAVORO IN FESTIVITÀ
+Se richiesto espressamente dal cliente:
+- Festività italiane: retribuzione tripla + recupero del giorno
+- Festività paese estero (solo se residente là): retribuzione doppia
+- 25 dicembre e 1 maggio: nessuna attività salvo emergenze critiche
+
+6.4 STRUMENTI AZIENDALI
+Il laptop e cellulare vanno usati solo per attività lavorative.
+L'installazione di software non autorizzato è vietata (violazione disciplinare).
+In caso di smarrimento: denuncia entro 24 ore + 150 € di franchise.
+
+================================================================================
+
+                     APPROVATO DAL COMITATO HR IL 15/12/2024
+                     PER SEGNALAZIONI: hr-policies@azienda.com
+================================================================================
