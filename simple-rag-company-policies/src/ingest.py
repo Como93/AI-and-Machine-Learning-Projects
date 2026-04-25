@@ -7,11 +7,14 @@ from pathlib import Path
 import os
 
 DB_PATH = Path("../chroma_db")
+TEXT = "../data/company-policies.txt"
+EMBEDDING_MODEL = "text-embedding-3-small"
+EMBEDDING_PROVIDER = "openai_key"
 load_dotenv()
 
 def load_document():
     loaders = [
-        TextLoader('../data/company-policies.txt')
+        TextLoader(TEXT)
     ]
     
     original_docs = []
@@ -33,8 +36,8 @@ def load_document():
     
 def create_embedding():
     return OpenAIEmbeddings(
-        model='text-embedding-3-small',
-        openai_api_key=os.getenv('openai_key')
+        model=EMBEDDING_MODEL,
+        openai_api_key=os.getenv(EMBEDDING_PROVIDER)
     )
 
 def save_on_chroma(chunks,embedding):
