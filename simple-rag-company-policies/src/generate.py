@@ -1,12 +1,15 @@
 import os 
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI
+#from langchain_openai import ChatOpenAI
+from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-OPENAI_MODEL = 'gpt-4.1'
+#OPENAI_MODEL = 'gpt-4.1'
+OLLAMA_MODEL = 'llama3.2'
+OLLAMA_BASE_URL = "http://localhost:11434"
 
 TEMPERATURE = 0.3
 MAX_TOKENS = 500
@@ -34,12 +37,19 @@ def get_llm():
     if not os.getenv('openai_key'):
         raise ValueError("openai_key is not available on env file")
     
-    return ChatOpenAI(
-        model=OPENAI_MODEL,
+    return ChatOllama(
+        model=OLLAMA_MODEL,
         temperature=TEMPERATURE,
-        max_tokens = MAX_TOKENS,
-        api_key=os.getenv('openai_key')
+        num_predict=MAX_TOKENS,
+        base_url=OLLAMA_BASE_URL
     )
+    
+    # return ChatOpenAI(
+    #     model=OPENAI_MODEL,
+    #     temperature=TEMPERATURE,
+    #     max_tokens = MAX_TOKENS,
+    #     api_key=os.getenv('openai_key')
+    # )
 
 def generate_answer(question,context):
     prompt = ChatPromptTemplate.from_messages([
