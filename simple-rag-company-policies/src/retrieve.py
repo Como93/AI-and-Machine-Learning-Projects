@@ -1,44 +1,32 @@
-from pathlib import Path
 from langchain_chroma import Chroma
-#from langchain_openai import OpenAIEmbeddings
 from langchain_ollama import OllamaEmbeddings
-from dotenv import load_dotenv
-import os
+from config import Config
 
-# EMBEDDING_MODEL = "text-embedding-3-small"
-# EMBEDDING_PROVIDER = "openai_key"
-EMBEDDING_MODEL = "nomic-embed-text"
-EMBEDDING_BASE_URL = "http://localhost:11434"
-DB_PATH = Path("../chroma_db")
-TOP_K = 3
-load_dotenv()
+class Retrieve:
+    def __init__(self,config:Config):
+        self.config = config
 
-def load_vectorstore():
-    if not DB_PATH.exists():
-        raise FileNotFoundError("Run ingest.py first")
-    
-    # embeddings = OpenAIEmbeddings(
-    #     model=EMBEDDING_MODEL,
-    #     openai_api_key=os.getenv(EMBEDDING_PROVIDER)
-    # )
-    
-    embeddings = OllamaEmbeddings(
-        model=EMBEDDING_MODEL,
-        base_url=EMBEDDING_BASE_URL
-    )
-    
-    vectorstore = Chroma(
-        embedding_function=embeddings,
-        persist_directory=DB_PATH,
-        collection_name="company_policies"
-    )
-    
-    return vectorstore
+    def load_vectorstore(self):
+        if not self.config.db_path.exists() :
+            raise FileNotFoundError("Run ingest.py first")
+        
+        embeddings = OllamaEmbeddings(
+            model=self.config.embedding_model,
+            base_url=self.config.ollama_base_url
+        )
+        
+        vectorstore = Chroma(
+            embedding_function=embeddings,
+            persist_directory=self.config.db_path,
+            collection_name="company_policies"
+        )
+        
+        return vectorstore
 
-def retrieve_top_three(query: str, top_k: int = TOP_K):
-    vectorstore = load_vectorstore()
-    results = vectorstore.similarity_search(query, k=top_k)
-    return results
+    def retrieve_top_three(self,query: str):
+        vectorstore = self.load_vectorstore()
+        results = vectorstore.similarity_search(query, k=self.config.top_k)
+        return results
 
     
     
