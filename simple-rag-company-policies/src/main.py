@@ -18,7 +18,7 @@ def setup_database(config):
 def ask_question(question,config):
     print(f"Retrieving relevant documents")
     retrieve = Retrieve(config)
-    documents = retrieve.retrieve_top_three(question)
+    documents = retrieve.retrieve_top_three(question,True)
     
     if not documents:
         print(f"No documents found")
