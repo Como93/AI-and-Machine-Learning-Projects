@@ -42,7 +42,7 @@ class Generate:
                 "source": "company-policies.txt"
             })
         
-        context = "---".join(context_parts)
+        context = "\n\n---\n\n".join(context_parts)
             
         answer = self.generate_answer(question, context)
         
