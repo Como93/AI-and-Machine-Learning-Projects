@@ -23,14 +23,25 @@ class Generate:
             ("user","{question}")
         ])
         
-        chain = prompt | self.get_llm() | StrOutputParser()
-        
-        return chain.invoke({
-            "context": context,
-            "question": question
-        })
+        try:
+            chain = prompt | self.get_llm() | StrOutputParser()
+            
+            response = chain.invoke({
+                "context": context,
+                "question": question
+            })
+            
+            return response
+        except Exception as e:
+            print(f"Generating response error {e}")
+            return ""
+            
 
     def generate_answer_with_sources(self,question,documents):
+        if not documents:
+            print(f"No documents found")
+            return []
+        
         context_parts = []
         sources = []
         
