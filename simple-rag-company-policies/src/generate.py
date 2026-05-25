@@ -2,6 +2,7 @@ from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from config import Config
+import re
 
 class Generate:
     def __init__(self,config:Config):
@@ -56,6 +57,17 @@ class Generate:
         context = "\n\n---\n\n".join(context_parts)
             
         answer = self.generate_answer(question, context)
+        
+        no_context = 'non ho informazioni'
+        
+        if no_context in answer.lower():
+            return answer, []
+        
+        cited_sources = re.findall(r'FONTE\s*(\d+)', answer)
+        cited_sources = list(set(cited_sources)) 
+        
+        if cited_sources:
+            sources = [s for s in sources if str(s["id"]) in cited_sources]
         
         return answer, sources
         
