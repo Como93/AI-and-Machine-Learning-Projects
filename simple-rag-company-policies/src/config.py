@@ -17,7 +17,7 @@ class Config:
             
             IMPORTANT RULES:
             - Don't guess information or using external knowledge
-            - If the answer doesn't belong the context, reply this: "I don't have any information on this in the company policies"
+            - If the answer doesn't belong the context, don't show any sources and say that you don't have any information in Italian Language
             - Always quote the section or article number where possible
             - If the context contains partial information, you have to be honest on limits
             - You have to be professional, clear and you only have to reply in Italian Language
