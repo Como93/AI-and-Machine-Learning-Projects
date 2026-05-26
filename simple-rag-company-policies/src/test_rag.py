@@ -18,7 +18,7 @@ def test_rag():
     
     for question in questions:
         print(question)
-        documents = retrieve.retrieve_top_three(question,True)
+        documents = retrieve.retrieve_top_three(question)
         answer, sources = generate.generate_answer_with_sources(question,documents)
         print(answer[:200])
         
