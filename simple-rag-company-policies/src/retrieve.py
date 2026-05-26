@@ -31,7 +31,7 @@ class Retrieve:
 
         return vectorstore
 
-    def retrieve_top_three(self,query: str,use_mmr: bool = False):
+    def retrieve_top_three(self,query: str):
         if not query:
             print(f"Empty query")
             return []
@@ -42,11 +42,7 @@ class Retrieve:
         
         try:
             vectorstore = self.load_vectorstore()
-            results = None
-            if use_mmr:
-                results = vectorstore.max_marginal_relevance_search(query, k=self.config.top_k,lambda_mult=0.5)
-            else:
-                results = vectorstore.similarity_search(query, k=self.config.top_k)
+            results = vectorstore.max_marginal_relevance_search(query, k=self.config.top_k,lambda_mult=0.5)
             return results
         except Exception as e:
             print(f"Retrieval error {e}")
